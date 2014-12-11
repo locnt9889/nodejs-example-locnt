@@ -1,0 +1,41 @@
+//Created by LocNT on 7/26/2014 12:08 AM.
+extends ../dashboard_layout
+
+block content
+    .row
+        .col-md-3
+        .col-md-6
+            .changepassword
+                h3.page-header Change Role User
+                form#changeRoleForm(action='saveChangePassword', method='post')
+                    .form-group
+                        .controls
+                            input#common.form-control(name='common', type='hidden')
+                    .form-group
+                        label.control-label Old Password
+                        .controls
+                            select.selectpicker(data-style="btn-info")
+                                option oprion1
+                                option oprion2
+                    .form-group
+                        label.control-label New Password
+                        .controls
+                            input#newPassword.form-control(name='newPassword', type='password')
+                    .form-group
+                        label.control-label Reinput New Password
+                        .controls
+                            input#reNewPassword.form-control(name='reNewPassword', type='password')
+                    .form-group
+                        input.btn.pull-right.btn-danger.btn-sm(id='btnSavePassword', value='Save', type='button')
+                        a.btn.pull-right.btn-primary.btn-sm(href='/') Back
+        .col-md-3
+
+        #modal-notification-changepassword.modal.fade(role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-body
+
+                    .modal-footer
+                        button.btn.btn-primary(type='button', data-dismiss='modal') OK
+block script
+    script(type="text/javascript", src="/javascripts/change-password.js")

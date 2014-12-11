@@ -1,0 +1,42 @@
+//Created by LocNT on 7/22/2014 3:00 AM.
+extends ../home_layout
+block content
+    .profile
+        h3.page-header Register
+        form#profileForm(action='saveAccount', method='post')
+            .form-group
+                .controls
+                    input#common.form-control(name='common', type='hidden')
+            .form-group
+                label.control-label Fullname
+                .controls
+                    input#fullname.form-control(name='fullname', type='text')
+            .form-group
+                label.control-label Email
+                .controls
+                    input#email.form-control(name='email', type='text')
+            .form-group
+                label.control-label Username
+                .controls
+                    input#username.form-control(name='username', type='text')
+            .form-group
+                label.control-label Password
+                .controls
+                    input#password.form-control(name='password', type='password')
+            .form-group
+                label.control-label Reinput Password
+                .controls
+                    input#repassword.form-control(name='repassword', type='password')
+            .form-group
+                input.btn.pull-right.btn-danger.btn-sm(id='btnSaveAccount', value='Save', type='button')
+                a.btn.pull-right.btn-primary.btn-sm(href='/') Back
+    #modal-notification-profile.modal.fade(role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-body
+
+                .modal-footer
+                    button.btn.btn-primary(type='button', data-dismiss='modal') OK
+
+block script
+    script(type="text/javascript" src="/javascripts/profile.js")

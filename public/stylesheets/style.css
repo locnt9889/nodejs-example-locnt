@@ -1,0 +1,103 @@
+body {
+   /* background-color: #26ABD6;*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/*start home*/
+.login{
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #adadad;
+    border-radius: 5px; ;
+    position: relative;
+    top:100px;
+}
+
+.profile{
+    padding: 20px 20px 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #adadad;
+    border-radius: 5px; ;
+    position: relative;
+    top:50px;
+}
+
+.login .page-header,.profile .page-header{
+    margin-top: 0;
+}
+
+.login .form-group .btn-primary{
+    margin-right: 5px;
+}
+
+.login .form-group .btn-danger{
+    margin-left: 5px;
+}
+
+.profile .form-group .btn{
+    margin-left: 10px;
+}
+
+.error{
+    color: #ff0000;
+}
+
+#profileForm label.error,#loginForm label.error,#changepasswordForm label.error {
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+    font-weight: normal;
+    font-size: 12px;
+}
+/*end home*/
+
+
+/*start dashboart*/
+
+#header-dashboard.navbar-default{
+    height: 50px;
+    background-color: #3c8dbc;
+    margin-bottom: 0;
+    border: none;
+}
+
+#header-dashboard .navbar-nav li a {
+    color: #fffFFF;
+}
+
+#content-dashboard.container .row{
+    background-color: #FFFFFF;
+}
+
+#header-dashboard .navbar-nav .open > a,
+#header-dashboard .navbar-nav .open > a:hover,
+#header-dashboard .navbar-nav .open > a:focus {
+    background-color: #26ABD6;
+}
+
+#header-dashboard .dropdown-menu{
+    border: none;
+    background-color: #26ABD6;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#header-dashboard .dropdown-menu > li > a:hover,
+#header-dashboard .dropdown-menu > li > a:focus {
+    background-color: #59C1F9;
+}
+
+/*change password*/
+.changepassword {
+    padding-bottom: 50px;
+}
+
+.changepassword .form-group .btn{
+    margin-left: 10px;
+}
+/*change password*/
+
+/*end dashboart*/

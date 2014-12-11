@@ -1,0 +1,28 @@
+//Created by LocNT on 7/22/2014 2:43 AM.
+extends ../home_layout
+block content
+    .login
+        h3.page-header Login
+        form#loginForm(action='loginAuthen', method='post')
+            if(errorLogin)
+                .form-group
+                    .controls
+                        label.error=errorLogin
+            .form-group
+                label.control-label Username
+                .controls
+                    input#username.form-control(name='username', type='text')
+            .form-group
+                label.control-label Password
+                .controls
+                    input#password.form-control(name='password', type='password')
+            #remember.checkbox(value='true', name='remember')
+                label
+                    input(value='true', type='checkbox')
+                    | Remember me?
+            .form-group
+                input.btn.btn-primary.btn-sm(type='submit', value='Login')
+                span.label.label-default Or
+                a.btn.btn-danger.btn-sm(href='register') Signup
+block script
+    script(type="text/javascript" src="/javascripts/login.js")
